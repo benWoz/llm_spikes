@@ -2,7 +2,6 @@ import openai
 import os
 
 private_key = os.environ.get('CHATGPT_KEY')
-
 openai.api_key = private_key
 
 model_engine = "text-davinci-003"

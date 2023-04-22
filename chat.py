@@ -1,6 +1,9 @@
 import openai
+import os
 
-openai.api_key = "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"
+private_key = os.environ.get('CHATGPT_KEY')
+
+openai.api_key = private_key
 
 model_engine = "text-davinci-003"
 prompt = "Hello, how are you today?"
